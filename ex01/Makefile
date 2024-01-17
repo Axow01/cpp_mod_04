@@ -16,14 +16,13 @@ C_YELLOW = \\x1b[33m
 
 NAME = animal
 
-SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongCat.cpp WrongAnimal.cpp Brain.cpp
 
 OBJS = $(patsubst %.cpp, bin/%.o, $(SRC))
 
 CC = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
-
 #---   RULES   ---#
 
 all: $(NAME) logo
