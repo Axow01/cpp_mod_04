@@ -16,7 +16,7 @@ C_YELLOW = \\x1b[33m
 
 NAME = animal
 
-SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongCat.cpp WrongAnimal.cpp
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp
 
 OBJS = $(patsubst %.cpp, bin/%.o, $(SRC))
 
