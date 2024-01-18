@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:45:34 by mmarcott          #+#    #+#             */
-/*   Updated: 2024/01/17 15:59:12 by mmarcott         ###   ########.fr       */
+/*   Updated: 2024/01/18 13:36:48 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,8 @@ WrongCat::~WrongCat(void) {
 WrongCat	&WrongCat::operator=(const WrongCat &rhs) {
 	_type = rhs._type;
 	return (*this);
+}
+
+void	WrongCat::makeSound(void) const {
+	std::cout << "Wrong cat makes noises!" << std::endl;
 }
