@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 16:11:32 by mmarcott          #+#    #+#             */
-/*   Updated: 2024/01/17 16:18:22 by mmarcott         ###   ########.fr       */
+/*   Updated: 2024/01/25 17:20:20 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Brain::Brain(void) {
 	std::cout << "Brain initialized!" << std::endl;
 }
 
-Brain::Brain(const Brain &copy): _ideas(copy._ideas) {
+Brain::Brain(const Brain &copy) {
 	*this = copy;
 }
 

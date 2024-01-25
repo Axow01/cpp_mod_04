@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 15:34:21 by mmarcott          #+#    #+#             */
-/*   Updated: 2024/01/18 17:07:08 by mmarcott         ###   ########.fr       */
+/*   Updated: 2024/01/25 17:23:08 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,7 @@ Character::Character(const Character &copy): _name(copy._name) {
 Character::~Character(void) {
 	std::cout << "del character called" << std::endl;
 	for (int i = 0; i < 4; i++) {
-		std::cout << _slot[i] << " " << _name << std::endl;
 		if (_slot[i]) {
-			std::cout << "got in here" << std::endl;
 			delete _slot[i];
 		}
 	}
