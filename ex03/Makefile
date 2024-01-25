@@ -14,7 +14,7 @@ C_YELLOW = \\x1b[33m
 
 #--- DEFAULT VALUES ---#
 
-NAME = animal
+NAME = materia
 
 SRC = src/main.cpp src/AMateria.cpp src/Character.cpp src/Cure.cpp src/Ice.cpp src/MateriaSource.cpp
 
@@ -22,7 +22,7 @@ OBJS = $(patsubst src/%.cpp, bin/%.o, $(SRC))
 
 CC = c++
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g 
 
 #---   RULES   ---#
 

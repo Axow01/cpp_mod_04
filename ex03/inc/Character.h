@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 15:29:49 by mmarcott          #+#    #+#             */
-/*   Updated: 2024/01/18 16:47:23 by mmarcott         ###   ########.fr       */
+/*   Updated: 2024/01/25 18:40:22 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define H_CHARACTER
 
 #include "ICharacter.h"
-#include "SaveAddress.h"
 
 class Character: public ICharacter {
 	public:
@@ -28,10 +27,10 @@ class Character: public ICharacter {
 		void				equip(AMateria *m);
 		void				unequip(int idx);
 		void				use(int idx, ICharacter &target);
+		AMateria			*getMateriaFromInventory(int idx);
 	private:
 		std::string	_name;
 		AMateria	*_slot[4];
-		SaveAddress	**_address;
 };
 
 #endif

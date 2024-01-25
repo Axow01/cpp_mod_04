@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 15:15:43 by mmarcott          #+#    #+#             */
-/*   Updated: 2024/01/18 16:20:02 by mmarcott         ###   ########.fr       */
+/*   Updated: 2024/01/25 18:00:30 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ void	MateriaSource::learnMateria(AMateria *materia) {
 	for (int i = 0; i < 4; i++) {
 		if (!_learnedMateria[i]) {
 			_learnedMateria[i] = materia->clone();
+			delete materia;
 			break;
 		}
 	}
